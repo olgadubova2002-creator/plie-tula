@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plie · школа танца для детей 3-10 лет в Туле</title>
+<meta name="description" content="Школа танца Plie в Туле: дети 3-10 лет, современная хореография, основы классического танца, гимнастика и ОФП. Абонемент на месяц 4200 ₽. Запись по телефону.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Школа танца Plie в Туле – танцы для детей 3-10 лет">
+<meta property="og:description" content="Хореография, основы классики, гимнастика и ОФП. Группы 3-4, 5-7 и 8-10 лет.">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
+<link rel="icon" href="assets/logo.webp">
+<script>document.documentElement.className='js';</script>
+<style>
+  :root {
+    --ground: #fbf4f1; --ink: #3b2226; --wine: #8f3f48; --deep: #5a2f35; --rose: #c98f93; --tint: #f1d9d6; --tint2: #e8c4c4;
+    --font: "Onest", "Segoe UI", system-ui, sans-serif;
+    --step-small: clamp(.875rem, .85rem + .1vw, .9375rem);
+    --step-body: clamp(1.0625rem, 1rem + .25vw, 1.1875rem);
+    --step-lead: clamp(1.25rem, 1.1rem + .7vw, 1.625rem);
+    --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+    --step-display: clamp(3.1rem, 1rem + 5.8vw, 6.25rem);
+    --margin: clamp(20px, 5vw, 72px);
+    --gap: clamp(80px, 8.5vw, 140px);
+    --r: 1.6rem;
+    --drop: var(--r) 0 var(--r) var(--r);
+    --photo-drop: 42% 0 42% 42%;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 400 var(--step-body)/1.5 var(--font); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--wine); outline-offset: 3px; }
+  ::selection { background: var(--wine); color: var(--ground); }
+  .skip { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .skip:focus { width: auto; height: auto; clip: auto; left: var(--margin); top: 12px; z-index: 40; padding: 12px 18px; background: var(--wine); color: var(--ground); border-radius: var(--drop); font-weight: 600; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wrap { padding-inline: var(--margin); }
+  section { position: relative; }
+  .display { font-weight: 800; letter-spacing: -.04em; line-height: .92; font-size: var(--step-display); text-wrap: balance; }
+  h2 { font-weight: 800; letter-spacing: -.035em; line-height: .98; font-size: var(--step-head); text-wrap: balance; max-width: 16ch; }
+  .lead { font-size: var(--step-lead); line-height: 1.35; max-width: 34ch; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 1.8rem; border: 0; cursor: pointer; font: 600 var(--step-body)/1 var(--font); text-decoration: none;
+    background: var(--wine); color: var(--ground); border-radius: var(--drop); transition: transform .22s cubic-bezier(.2,.7,.2,1), background-color .22s; }
+  .btn:hover { transform: translateY(-3px); background: var(--deep); }
+  .btn:active { transform: translateY(0) scale(.98); }
+  .btn--light { background: var(--ground); color: var(--deep); }
+  .btn--light:hover { background: #fff; }
+  .link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration-thickness: 2px; text-underline-offset: .22em; }
+  .link:hover { color: var(--wine); }
+
+  /* entrance */
+  .js .rise { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .js .rise.in { opacity: 1; transform: none; }
+  .js .pop { opacity: 0; transform: scale(.92) rotate(-2deg); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .js .pop.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .js .rise, .js .pop { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+  /* bar */
+  .bar { position: fixed; z-index: 20; inset: 0 0 auto 0; display: flex; align-items: center; justify-content: space-between; padding: 14px var(--margin); background: var(--ground); transition: transform .3s; }
+  .bar__mark { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 800; font-size: var(--step-body); letter-spacing: -.02em; min-height: 44px; }
+  .bar__mark img { width: 44px; height: 44px; border-radius: 50%; }
+  .bar__right { display: flex; align-items: center; gap: 24px; }
+  .bar .btn { min-height: 48px; padding: 0 1.3rem; font-size: var(--step-small); }
+  @media (max-width: 640px) { .bar__tel { display: none; } .bar__mark span { display: none; } }
+
+  /* hero: the drop, enormous, cropped by the viewport */
+  .hero { min-height: 100svh; padding: 120px var(--margin) 64px; display: grid; align-items: center; overflow: hidden; isolation: isolate; }
+  .hero__drop { position: absolute; z-index: -1; right: -22vh; top: 50%; width: 120vh; height: 120vh; margin-top: -60vh; background: var(--wine); border-radius: 50% 0 50% 50%; will-change: transform; }
+  .hero__photo { position: absolute; z-index: -1; right: 6vw; bottom: 0; width: min(36vw, 62vh); aspect-ratio: 5 / 6; border-radius: 42% 0 0 0; overflow: hidden; background: var(--tint); }
+  .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+  .hero__copy { max-width: 56vw; display: grid; gap: 32px; justify-items: start; }
+  .hero__copy .display { max-width: 9ch; }
+  .hero__copy p { max-width: 30ch; }
+  .hero__copy .row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
+  @media (max-width: 860px) {
+    .hero { align-items: start; padding-top: 104px; }
+    .hero__copy { max-width: none; gap: 20px; }
+    .hero__drop { width: 150vw; height: 150vw; right: -52vw; top: auto; bottom: -62vw; margin-top: 0; }
+    .hero__photo { width: 66vw; right: 4vw; border-radius: 46% 0 0 0; }
+    .hero__copy .lead { font-size: 1.125rem; max-width: 24ch; }
+  }
+
+  /* statement with picture words */
+  .about { padding-block: var(--gap) 0; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 56px; }
+  .statement { grid-column: 1 / 12; font-weight: 600; font-size: clamp(1.375rem, 1rem + 1.5vw, 2.25rem); line-height: 1.22; letter-spacing: -.015em; max-width: 34em; text-wrap: pretty; }
+  .slot { display: inline-block; width: 1.9em; height: 1em; vertical-align: -.12em; border-radius: .18em 0 .5em .5em; overflow: hidden; background: var(--tint); }
+  .slot img { width: 100%; height: 100%; object-fit: cover; }
+  .about__more { grid-column: 7 / 13; display: grid; gap: 24px; justify-items: start; align-content: center; align-items: start; }
+  .about__more p { font-size: var(--step-body); max-width: 40ch; }
+  .about__fig { grid-column: 1 / 6; grid-row: 2; aspect-ratio: 5 / 4; border-radius: var(--photo-drop); overflow: hidden; background: var(--tint); }
+  .about__fig img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .statement { grid-column: 1 / -1; } .slot { width: 1.5em; } .about__more, .about__fig { grid-column: 1 / -1; grid-row: auto; } .about__fig { aspect-ratio: 4 / 3; } }
+
+  /* live: choose the group by age */
+  .pick { margin-top: var(--gap); padding-block: clamp(64px, 8vw, 120px); background: var(--tint); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 40px; }
+  .pick__head { grid-column: 1 / 7; display: grid; gap: 20px; align-content: start; }
+  .ages { display: flex; flex-wrap: wrap; gap: 10px; }
+  .age { min-width: 64px; min-height: 64px; border: 0; cursor: pointer; font: 800 var(--step-lead)/1 var(--font); letter-spacing: -.03em; background: var(--ground); color: var(--ink); border-radius: var(--drop); transition: transform .2s cubic-bezier(.2,.7,.2,1), background-color .2s, color .2s; }
+  .age:hover { transform: translateY(-3px); }
+  .age[aria-pressed="true"] { background: var(--wine); color: var(--ground); }
+  .pick__out { grid-column: 7 / 13; display: grid; gap: 28px; align-content: start; }
+  .group { display: grid; gap: 14px; padding: 32px; background: var(--ground); border-radius: var(--drop); }
+  .group h3 { font-weight: 800; font-size: var(--step-lead); letter-spacing: -.02em; line-height: 1.1; }
+  .group p { max-width: 42ch; }
+  .group b { font-weight: 800; color: var(--wine); font-size: var(--step-lead); letter-spacing: -.02em; }
+  .js .group[hidden] { display: none; }
+  .js .group.swap { animation: swap .45s cubic-bezier(.2,.7,.2,1); }
+  @keyframes swap { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 860px) { .pick__head, .pick__out { grid-column: 1 / -1; } .group { padding: 24px; } }
+
+  /* first lesson: accordion of tinted panels */
+  .lesson { padding-block: var(--gap) 0; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 56px; }
+  .lesson__head { grid-column: 1 / 6; }
+  .lesson__intro { grid-column: 7 / 13; align-self: end; max-width: 40ch; }
+  .acc { grid-column: 1 / -1; display: flex; height: 520px; margin-inline: calc(var(--margin) * -1); }
+  .stage { position: relative; flex: 1 1 0; min-width: 0; overflow: hidden; border: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; padding: 0; transition: flex-grow .45s cubic-bezier(.2,.7,.2,1); background: var(--bg); color: var(--fg); }
+  .stage:first-child { padding-left: var(--margin); }
+  .stage[aria-expanded="true"] { flex-grow: 9; cursor: default; }
+  .stage__name { position: absolute; left: 20px; bottom: 24px; transform-origin: 0 100%; transform: rotate(-90deg) translate(0, 100%); font-weight: 800; font-size: var(--step-body); letter-spacing: -.02em; white-space: nowrap; transition: transform .45s, font-size .45s; }
+  .stage:first-child .stage__name { left: calc(var(--margin) + 20px); }
+  .stage[aria-expanded="true"] .stage__name { transform: none; top: 24px; bottom: auto; font-size: var(--step-lead); }
+  .stage__body { position: absolute; left: 24px; bottom: 28px; width: min(36ch, 80%); opacity: 0; transform: translateY(12px); transition: opacity .3s, transform .3s; font-size: var(--step-body); }
+  .stage:first-child .stage__body { left: calc(var(--margin) + 24px); }
+  .stage[aria-expanded="true"] .stage__body { opacity: 1; transform: none; transition-delay: .2s; }
+  @media (max-width: 860px) {
+    .lesson__head, .lesson__intro { grid-column: 1 / -1; }
+    .acc { flex-direction: column; height: auto; }
+    .stage { flex: none; min-height: 64px; }
+    .acc { margin-inline: 0; }
+    .stage__name, .stage[aria-expanded="true"] .stage__name, .stage:first-child .stage__name { position: static; transform: none; display: block; padding: 18px var(--margin); font-size: 1.125rem; }
+    .stage:first-child { padding-left: 0; }
+    .stage__body, .stage:first-child .stage__body { position: static; display: block; width: auto; padding: 0 var(--margin); max-height: 0; opacity: 1; transform: none; overflow: hidden; transition: max-height .4s; }
+    .stage[aria-expanded="true"] .stage__body { max-height: 12rem; padding-bottom: 20px; }
+  }
+  .no-js .acc { flex-direction: column; height: auto; }
+  .no-js .stage__name { position: static; transform: none; padding: 18px 20px; display: block; }
+  .no-js .stage__body { position: static; opacity: 1; transform: none; width: auto; padding: 0 20px 20px; }
+
+  /* schedule */
+  .sched { padding-block: var(--gap) 0; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 40px; align-items: start; }
+  .sched__head { grid-column: 1 / 6; display: grid; gap: 24px; justify-items: start; }
+  .sched__table { grid-column: 6 / 13; width: 100%; border-collapse: separate; border-spacing: 10px; margin: -10px; width: calc(100% + 20px); table-layout: fixed; }
+  .sched__table th, .sched__table td { text-align: left; font-weight: 800; letter-spacing: -.02em; font-size: var(--step-lead); line-height: 1.1; padding: 22px 20px; border-radius: var(--drop); }
+  .sched__table thead th { background: var(--wine); color: var(--ground); font-size: var(--step-body); text-align: center; padding: 14px 10px; }
+  .sched__table td { text-align: center; white-space: nowrap; }
+  @media (max-width: 1180px) { .sched__table td { font-size: var(--step-body); } }
+  .sched__table small { display: block; margin-top: 6px; font: 600 var(--step-small)/1.3 var(--font); letter-spacing: 0; }
+  .sched__table tbody th { font-size: var(--step-lead); }
+  .sched__table .g1 > * { background: var(--rose); } .sched__table .g2 > * { background: var(--tint2); } .sched__table .g3 > * { background: var(--tint); }
+  .sched__table thead td { padding: 0; background: none; }
+  @media (max-width: 860px) { .sched__head, .sched__table { grid-column: 1 / -1; } .sched__table { border-spacing: 6px; margin: -6px; width: calc(100% + 12px); } .sched__table th, .sched__table td { padding: 16px 10px; font-size: var(--step-body); } .sched__table tbody th { font-size: var(--step-body); } .sched__table { table-layout: auto; } }
+
+  /* pricing: two fields */
+  .plans { margin-top: var(--gap); display: grid; grid-template-columns: 5fr 7fr; min-height: 60svh; }
+  .plan { padding: clamp(24px, 3vw, 48px); display: grid; grid-template-rows: auto auto 1fr auto; gap: 20px; }
+  .plan h2 { max-width: 10ch; }
+  .plan p { max-width: 30ch; font-size: var(--step-lead); line-height: 1.3; }
+  .plan__foot { display: flex; align-items: end; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-self: end; }
+  .price { font-weight: 800; letter-spacing: -.05em; line-height: .9; font-size: var(--step-display); }
+  .price small { font: 600 var(--step-lead)/1 var(--font); letter-spacing: 0; margin-left: 10px; }
+  .plan--a { background: var(--tint2); color: var(--ink); padding-left: var(--margin); }
+  .plan--b { background: var(--wine); color: var(--ground); padding-right: var(--margin); }
+  .plan--b .btn { background: var(--ground); color: var(--deep); }
+  .plan--a .btn { background: var(--wine); color: var(--ground); }
+  @media (max-width: 860px) { .plans { grid-template-columns: 1fr; } .plan { min-height: 66svh; } .plan--b { order: -1; } }
+  @media (max-width: 600px) { .plan .btn { width: 100%; } .plan__foot { display: grid; } }
+
+  /* proof */
+  .proof { padding-block: var(--gap) 0; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; }
+  .proof__fig { grid-column: 2 / 6; aspect-ratio: 3 / 4; max-height: 70svh; border-radius: var(--photo-drop); overflow: hidden; background: var(--tint); }
+  .proof__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .proof__q { grid-column: 7 / 13; margin-top: 72px; display: grid; gap: 32px; align-content: start; justify-items: start; }
+  .proof h2 { max-width: 14ch; }
+  blockquote p { font-weight: 400; font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem); line-height: 1.22; letter-spacing: -.015em; max-width: 26ch; }
+  blockquote cite { display: block; margin-top: 20px; font-style: normal; font-weight: 600; font-size: var(--step-body); }
+  .more { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; align-items: start; margin-top: 24px; }
+  .more blockquote p { font-size: var(--step-body); line-height: 1.45; }
+  .proof__rate { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .proof__rate b { font-weight: 800; font-size: var(--step-head); letter-spacing: -.05em; line-height: .9; color: var(--wine); }
+  @media (max-width: 860px) { .proof__fig { grid-column: 1 / 9; } .proof__q { grid-column: 1 / -1; margin-top: 32px; } .more { grid-template-columns: 1fr; } }
+
+  /* cta tiles */
+  .cta { margin-top: var(--gap); display: grid; grid-template-columns: .8fr 6fr .8fr; gap: 12px; height: 380px; }
+  .tile { border-radius: var(--drop); overflow: hidden; background: var(--tint); }
+  .tile img { width: 100%; height: 100%; object-fit: cover; }
+  .tile--main { background: var(--wine); color: var(--ground); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; align-content: center; align-items: center; column-gap: 40px; row-gap: 18px; }
+  .tile--main .tile__l { display: grid; gap: 18px; justify-items: start; }
+  .tile--main .tile__r { display: grid; gap: 6px; font-size: var(--step-body); }
+  .tile--main .tile__r b { font-weight: 800; font-size: var(--step-lead); letter-spacing: -.02em; }
+  .tile--main h2 { max-width: 12ch; }
+  .tile--main .btn { background: var(--ground); color: var(--deep); }
+  .tile:first-child { border-radius: 0 var(--r) var(--r) 0; }
+  .tile:last-child { border-radius: var(--r) 0 0 var(--r); background: var(--rose); }
+  @media (max-width: 860px) { .cta { grid-template-columns: 1fr 1fr; height: auto; padding-inline: var(--margin); margin-top: calc(var(--gap) + 96px); } .tile--main { grid-column: 1 / -1; grid-row: 1; padding: 28px; grid-template-columns: 1fr; } .tile { height: 120px; border-radius: var(--drop); } .tile:first-child, .tile:last-child { border-radius: var(--drop); } }
+
+  /* footer: the mark built large */
+  .foot { margin-top: calc(var(--gap) + 40px); background: var(--deep); color: var(--ground); padding: clamp(32px, 4vw, 56px) var(--margin) 28px; display: grid; gap: 56px; }
+  .mark { width: 100%; height: auto; max-height: 34svh; display: block; }
+  .foot__cols { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 32px; font-size: var(--step-small); }
+  .foot__links { grid-column: 1 / 9; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px 24px; align-content: start; }
+  .foot__links a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; font-weight: 600; }
+  .foot__links a:hover { text-decoration: underline; }
+  .foot__addr { grid-column: 9 / 13; display: grid; gap: 6px; }
+  .foot__last { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: var(--step-small); }
+  .foot__last .btn { min-height: 48px; font-size: var(--step-small); background: var(--ground); color: var(--deep); }
+  @media (max-width: 860px) { .foot__links { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; } .foot__addr { grid-column: 1 / -1; } }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">К содержанию</a>
+<header class="bar">
+  <a class="bar__mark" href="#top" aria-label="Plie, в начало страницы"><img src="assets/logo.webp" alt="" width="44" height="44"><span>Plie</span></a>
+  <nav class="bar__right" aria-label="Быстрые ссылки">
+    <a class="link bar__tel" href="tel:+79190753531">+7 (919) 075-35-31</a>
+    <a class="btn" href="tel:+79190753531">Записаться</a>
+  </nav>
+</header>
+
+<main id="main"><span id="top"></span>
+
+  <section class="hero" aria-label="Школа танца Plie">
+    <div class="hero__drop" aria-hidden="true" data-drift></div>
+    <div class="hero__photo"><img src="assets/hero.webp" alt="Девочка в чёрном купальнике складывает руки сердцем" width="1000" height="1360" fetchpriority="high"></div>
+    <div class="hero__copy">
+      <h1 class="display rise">Школа танца Plie</h1>
+      <p class="lead rise" style="--i:1">Танцы для детей 3-10 лет в Туле: хореография, основы классики, гимнастика и ОФП.</p>
+      <div class="row rise" style="--i:2">
+        <a class="btn" href="tel:+79190753531">Записаться на занятие</a>
+        <a class="link" href="#gruppa">Подобрать группу</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about wrap" aria-labelledby="about-h">
+    <h2 class="sr" id="about-h">Чему учим</h2>
+    <p class="statement rise">Хореография даёт ритм <span class="slot"><img src="assets/slot1.webp" alt="Дети в зале повторяют движения" width="400" height="300" loading="lazy"></span>, классика – осанку <span class="slot"><img src="assets/slot2.webp" alt="Девочка в зале" width="400" height="300" loading="lazy"></span>, гимнастика – гибкость <span class="slot"><img src="assets/slot3.webp" alt="Фитболы и зеркала в зале" width="400" height="300" loading="lazy"></span>.</p>
+    <figure class="about__fig pop"><img src="assets/hall.webp" alt="Дети в чёрной форме выстроились в светлом зале школы" width="1600" height="760" loading="lazy"></figure>
+    <div class="about__more">
+      <p class="rise" style="--i:1">Занятия комплексные: гимнастика, элементы танца и задания на развитие фантазии. Ребёнок привыкает к дисциплине и получает уверенность в себе.</p>
+      <a class="btn rise" style="--i:2" href="tel:+79190753531">Записаться на занятие</a>
+    </div>
+  </section>
+
+  <section class="pick wrap" id="gruppa" aria-labelledby="pick-h">
+    <div class="pick__head">
+      <h2 id="pick-h" class="rise">Сколько лет вашему ребёнку?</h2>
+      <p class="lead rise" style="--i:1">Нажмите на возраст – покажем группу и что ждёт ребёнка.</p>
+      <div class="ages rise" style="--i:2" role="group" aria-label="Возраст ребёнка">
+        <button class="age" type="button" data-age="3">3</button>
+        <button class="age" type="button" data-age="4">4</button>
+        <button class="age" type="button" data-age="5">5</button>
+        <button class="age" type="button" data-age="6">6</button>
+        <button class="age" type="button" data-age="7">7</button>
+        <button class="age" type="button" data-age="8">8</button>
+        <button class="age" type="button" data-age="9">9</button>
+        <button class="age" type="button" data-age="10">10</button>
+      </div>
+    </div>
+    <div class="pick__out" aria-live="polite">
+      <article class="group" data-for="3 4">
+        <h3>Младшая группа, 3-4 года</h3>
+        <p>Младшая группа. В программе: хореография, основы классики, ОФП и гимнастика.</p>
+        <p>Вторник и пятница, 17:00-18:00</p>
+        <p><b>4200 ₽</b> абонемент на месяц</p>
+      </article>
+      <article class="group" data-for="5 6 7">
+        <h3>Средняя группа, 5-7 лет</h3>
+        <p>Средняя группа. В программе: хореография, основы классики, ОФП и гимнастика.</p>
+        <p>Вторник и пятница, 18:00-19:00</p>
+        <p><b>4200 ₽</b> абонемент на месяц</p>
+      </article>
+      <article class="group" data-for="8 9 10">
+        <h3>Старшая группа, 8-10 лет</h3>
+        <p>Старшая группа. В программе: хореография, основы классики, ОФП и гимнастика.</p>
+        <p>Вторник и пятница, 16:00-17:00</p>
+        <p><b>4200 ₽</b> абонемент на месяц</p>
+      </article>
+      <a class="btn" href="tel:+79190753531">Записать ребёнка</a>
+    </div>
+  </section>
+
+  <section class="lesson wrap" aria-labelledby="lesson-h">
+    <h2 class="lesson__head rise" id="lesson-h">Как записаться</h2>
+    <p class="lesson__intro lead rise" style="--i:1">Мест в группах ограничено, поэтому записывайтесь заранее.</p>
+    <div class="acc rise" style="--i:2">
+      <button class="stage" type="button" aria-expanded="true" style="--bg:#5a2f35;--fg:#fbf4f1"><span class="stage__name">Запись</span><span class="stage__body">Позвоните по номеру +7 (919) 075-35-31 или напишите в группу ВКонтакте. Количество мест в группах ограничено.</span></button>
+      <button class="stage" type="button" aria-expanded="false" style="--bg:#8f3f48;--fg:#fbf4f1"><span class="stage__name">Группа</span><span class="stage__body">Назовите возраст ребёнка. Есть три группы: 3-4, 5-7 и 8-10 лет.</span></button>
+      <button class="stage" type="button" aria-expanded="false" style="--bg:#c98f93;--fg:#3b2226"><span class="stage__name">Время</span><span class="stage__body">Занятия по вторникам и пятницам, группа занимается один час.</span></button>
+      <button class="stage" type="button" aria-expanded="false" style="--bg:#e8c4c4;--fg:#3b2226"><span class="stage__name">Знакомство</span><span class="stage__body">Первое занятие бесплатное, приходить нужно по записи.</span></button>
+      <button class="stage" type="button" aria-expanded="false" style="--bg:#f1d9d6;--fg:#3b2226"><span class="stage__name">Абонемент</span><span class="stage__body">Если ребёнку понравилось, абонемент на месяц стоит 4200 ₽.</span></button>
+    </div>
+  </section>
+
+  <section class="sched wrap" id="raspisanie" aria-labelledby="sched-h">
+    <div class="sched__head">
+      <h2 id="sched-h" class="rise">Расписание</h2>
+      <p class="lead rise" style="--i:1">Занятия по вторникам и пятницам. Час в группе, три группы по возрасту.</p>
+      <a class="btn rise" style="--i:2" href="tel:+79190753531">Записаться на занятие</a>
+    </div>
+    <table class="sched__table pop" style="--i:1">
+      <caption class="sr">Расписание занятий школы Plie</caption>
+      <thead><tr><td></td><th scope="col">Вторник</th><th scope="col">Пятница</th></tr></thead>
+      <tbody>
+        <tr class="g1"><th scope="row">Группа 1<small>старшие, 8-10 лет</small></th><td>16:00-17:00</td><td>16:00-17:00</td></tr>
+        <tr class="g2"><th scope="row">Группа 2<small>средние, 5-7 лет</small></th><td>18:00-19:00</td><td>18:00-19:00</td></tr>
+        <tr class="g3"><th scope="row">Группа 3<small>младшие, 3-4 года</small></th><td>17:00-18:00</td><td>17:00-18:00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="plans" aria-label="Цена">
+    <div class="plan plan--a">
+      <h2 class="rise">Первое занятие</h2>
+      <p class="rise" style="--i:1">Знакомство со школой и группой. По записи.</p>
+      <span></span>
+      <div class="plan__foot">
+        <span class="price pop">бесплатно</span>
+        <a class="btn" href="tel:+79190753531">Записаться</a>
+      </div>
+    </div>
+    <div class="plan plan--b">
+      <h2 class="rise">Абонемент на месяц</h2>
+      <p class="rise" style="--i:1">Группы 3-4, 5-7 и 8-10 лет, занятия по вторникам и пятницам.</p>
+      <span></span>
+      <div class="plan__foot">
+        <span class="price pop">4200<small>₽ в месяц</small></span>
+        <a class="btn" href="tel:+79190753531">Записаться</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof wrap" aria-labelledby="proof-h">
+    <figure class="proof__fig pop"><img src="assets/kids.webp" alt="Трое детей в чёрной форме улыбаются, подпёрев щёки руками" width="900" height="1100" loading="lazy"></figure>
+    <div class="proof__q">
+      <h2 id="proof-h" class="rise">Родители о школе</h2>
+      <div class="proof__rate rise" style="--i:1"><b>4,5</b><span>на Яндекс Картах, 7 отзывов. <a class="link" href="https://yandex.ru/maps/org/plie/74195185997/reviews/" target="_blank" rel="noopener">Читать все</a></span></div>
+      <blockquote class="rise" style="--i:2"><p>«Дочка недавно стала посещать эту школу танцев, и это просто настоящее открытие!»</p><cite>Диана М. · 3 октября</cite></blockquote>
+      <div class="more">
+        <blockquote class="rise" style="--i:3"><p>«Занятия комплексно развивают ребенка: гинастика, элементы танца и даже задания на развитие фантазии!»</p><cite>Екатерина Овчинникова · 30 сентября</cite></blockquote>
+        <blockquote class="rise" style="--i:4"><p>«Прекрасный преподаватель, добрая, позитивная, в меру строгая, любит детей и они отвечают ей тем же»</p><cite>Лилия Климова · 30 сентября</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-h">
+    <div class="tile"><img src="assets/props.webp" alt="" width="1000" height="780" loading="lazy"></div>
+    <div class="tile tile--main">
+      <div class="tile__l">
+        <h2 id="cta-h" class="rise">Танцуй. Мечтай. Вдохновляйся</h2>
+        <a class="btn rise" style="--i:2" href="tel:+79190753531">+7 (919) 075-35-31</a>
+      </div>
+      <div class="tile__r rise" style="--i:1">
+        <b>Позвоните и назовите возраст</b>
+        <span>Подберём группу из трёх: 3-4, 5-7 или 8-10 лет.</span>
+        <span>1-й Восточный проезд, 9, Тула</span>
+        <span>Абонемент на месяц 4200 ₽</span>
+      </div>
+    </div>
+    <div class="tile"></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <svg class="mark" viewBox="0 0 1000 300" role="img" aria-label="Plié" preserveAspectRatio="xMinYMax meet"><rect x="0" y="0" width="380" height="300" fill="#c98f93"/><rect x="384" y="70" width="190" height="230" fill="#e8c4c4"/><rect x="578" y="24" width="190" height="276" fill="#f1d9d6"/><rect x="772" y="100" width="228" height="200" fill="#fbf4f1"/><g fill="#5a2f35" font-family="Onest,Segoe UI,sans-serif" font-weight="800" font-size="250" letter-spacing="-12"><text x="26" y="292">P</text><text x="430" y="292">l</text><text x="618" y="292">i</text><text x="812" y="292">é</text></g></svg>
+  <div class="foot__cols">
+    <nav class="foot__links" aria-label="Разделы">
+      <a href="#top">Главная</a><a href="#gruppa">Подобрать группу</a><a href="#raspisanie">Расписание</a><a href="#lesson-h">Первое занятие</a><a href="https://vk.ru/club233418177" target="_blank" rel="noopener">ВКонтакте</a>
+    </nav>
+    <div class="foot__addr"><span>1-й Восточный проезд, 9, Тула (Осиновая Гора)</span><a class="link" href="tel:+79190753531">+7 (919) 075-35-31</a></div>
+  </div>
+  <div class="foot__last"><span>Plie · школа танца · Тула. Фото: группа ВКонтакте и карточка на Яндекс Картах.</span><a class="btn" href="tel:+79190753531">Записаться</a></div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
